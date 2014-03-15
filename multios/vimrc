@@ -1,0 +1,57 @@
+
+" ************************ Functionality *************************** "
+
+set nocompatible 		" Vi nonstrict iMproved features
+" enable loading the plugin files and indent for specific file types
+filetype plugin indent on
+set backspace=2  		" make backspace work like most other apps
+set mouse=a				" enbale mouse
+:let mapleader = "," 	" map ',' as <Leader>
+
+" ************************ Aesthetics *************************** "
+
+syntax on 				" syntax highlighting on
+set t_Co=256 			" enable 256 colors
+set number				" enable line numbers
+colorscheme molokai 	" set default color scheme
+set colorcolumn=80		" display character column limit of 80
+
+" This highlights the background in a subtle red for text that goes over the 
+" 80 column limit
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
+
+" ************************ Tabbing *************************** "
+" custom tabbing for ruby files 
+" If i understand this correctly: Automatically, when Filetype 'ruby' is found,
+" set local properties only such that ts = 'number of spaces that <Tab> in file
+" uses' sts = 'number of spaces that <Tab> uses while editing' sw = 'number of 
+" spaces to use for (auto)indent step'. Phew!
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 
+
+" ## make sure tab is consistant in non specific file types
+
+set smartindent " auto insert one extra level of indentation in some cases
+set noexpandtab " don't replace tabs with spaces
+set tabstop=4 	" changes the width of the TAB character, plain and simple
+" affects what happens when you press >>, << or ==. It also affects how
+" automatic indentation works
+set shiftwidth=4
+
+
+" ************************ Plugin properties *************************** "
+
+" https://github.com/airblade/vim-gitgutter
+let g:gitgutter_enabled = 1 " enable gitgutter by default
+
+
+" ********************** Pathogen package manager ************************* "
+
+" enable pathodgen package manager
+" https://github.com/tpope/vim-pathogen
+" Now any plugins you wish to install can be extracted to a subdirectory under 
+" ~/.vim/bundle, and they will be added to the 'runtimepath'. Observe:
+" cd ~/.vim/bundle
+" git clone git://github.com/tpope/vim-sensible.git
+execute pathogen#infect()
