@@ -54,4 +54,5 @@ let g:gitgutter_enabled = 1 " enable gitgutter by default
 " ~/.vim/bundle, and they will be added to the 'runtimepath'. Observe:
 " cd ~/.vim/bundle
 " git clone git://github.com/tpope/vim-sensible.git
+" execute pathogen#infect()
 execute pathogen#infect()

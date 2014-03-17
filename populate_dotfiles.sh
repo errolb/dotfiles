@@ -7,6 +7,6 @@ for dotfile in $HOME/.dotfiles/multios/*; do
 	#ln -s "$i" $linkpath
 	if [ $filename != "README.md" ]
 	then
-		ln -sF "$HOME/.dotfiles/multios/$filename" "$HOME/.$filename"
+		ln -sf "$HOME/.dotfiles/multios/$filename" "$HOME/.$filename"
 	fi
 done
