@@ -1,12 +1,12 @@
 #!/usr/bin/env sh
 
 for dotfile in $HOME/.dotfiles/multios/*; do
-	# changing spaces and parenthesis to underscores for symlink
 	filename=$(basename $dotfile) 
-	# linkpath="$HOME/.all_media_symlinks/tvshows_live_action/$filename"
-	#ln -s "$i" $linkpath
+	
 	if [ $filename != "README.md" ]
 	then
-		ln -sf "$HOME/.dotfiles/multios/$filename" "$HOME/.$filename"
+		# -n flag: no-dereference prevents dir descending
+		# -f force overwrite
+		ln -snf "$HOME/.dotfiles/multios/$filename" "$HOME/.$filename"
 	fi
 done
