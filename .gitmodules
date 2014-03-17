@@ -1,0 +1,18 @@
+[submodule "multios/vim/bundle/linters.vim"]
+	path = multios/vim/bundle/linters.vim
+	url = https://github.com/timheap/linters.vim.git
+[submodule "multios/vim/bundle/nerdcommenter"]
+	path = multios/vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "multios/vim/bundle/nerdtree"]
+	path = multios/vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "multios/vim/bundle/supertab"]
+	path = multios/vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "multios/vim/bundle/vim-gitgutter"]
+	path = multios/vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "multios/vim/bundle/vim-surround"]
+	path = multios/vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
