@@ -1,10 +1,10 @@
 # Gmail info
 source ~/.secret_gmail_details
 
-# Change the following line to a different editor you prefer.
+# editor#
 set editor = "vim"
 
-# Basic config, you can leave this as is
+# Basic config
 set folder = "imaps://imap.gmail.com:993"
 set spoolfile = "+INBOX"
 set imap_check_subscribed
@@ -39,3 +39,7 @@ macro index,pager ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
 macro index,pager gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
 macro index,pager gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
 macro index,pager gt "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to sent mail"
+
+# Other key bindings
+bind pager <up> previous-line
+bind pager <down> next-line
