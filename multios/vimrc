@@ -81,7 +81,8 @@ set shiftwidth=4
 " https://github.com/airblade/vim-gitgutter
 let g:gitgutter_enabled = 1 " enable gitgutter by default
 
-
+" linter
+let g:linters_disabled_filetypes = ['html']
 " ********************** Pathogen package manager ************************* "
 
 " enable pathodgen package manager
