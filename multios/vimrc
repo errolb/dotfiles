@@ -40,18 +40,18 @@ nnoremap <C-n> :call NumberToggle()<cr> " call NumberToggle func
 syntax on 				" syntax highlighting on
 set background=dark
 set t_Co=256 			" enable 256 colors
-set cursorline 			" highlight current line
+" set cursorline 			" highlight current line
 set number				" enable line numbers
-colorscheme jeallybean 	" set default color scheme
+colorscheme darkblue 	" set default color scheme
 set colorcolumn=80		" display character column limit of 80
-:set hlsearch 			" highlight search pattern
+set hlsearch 			" highlight search pattern
 " Press F4 to toggle highlighting on/off, and show current value.
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
 " This highlights the background in a subtle red for text that goes over the 
 " 80 column limit
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+" highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" match OverLength /\%81v.\+/
 
 "  all occurences of the variable are underlined
 "  find other colours to use by running the command:
