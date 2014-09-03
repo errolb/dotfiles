@@ -42,7 +42,7 @@ set background=dark
 set t_Co=256 			" enable 256 colors
 " set cursorline 			" highlight current line
 set number				" enable line numbers
-colorscheme darkblue 	" set default color scheme
+colorscheme molokai 	" set default color scheme
 set colorcolumn=80		" display character column limit of 80
 set hlsearch 			" highlight search pattern
 " Press F4 to toggle highlighting on/off, and show current value.
